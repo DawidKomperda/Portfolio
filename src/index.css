@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menu-background-position-0 > .menu-background-pattern {
+  background-position: 0% -25%;
+}
+
+.menu-background-position-1 > .menu-background-pattern {
+  background-position: 0% -50%;
+}
+
+.menu-background-position-2 > .menu-background-pattern {
+  background-position: 0% -75%;
+}
+
+.menu-background-position-3 > .menu-background-pattern {
+  background-position: 0% -100%;
+}
+
+.menu-background-pattern {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 9%, 
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  height: 100vh;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease, 
+    background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu:hover ~ .menu-background-pattern {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+
+}
+
+.menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+.menu-items:hover > .menu-item:hover {
+  opacity: 1; 
+}
