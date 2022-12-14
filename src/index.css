@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+
+  height: auto;
+}
+
+* {
+  scroll-behavior: smooth;
+}
 
 .menu-background-position-0 > .menu-background-pattern {
   background-position: 0% -25%;
@@ -22,18 +37,18 @@
 .menu-background-pattern {
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.1) 9%, 
-    transparent 9%
+    transparent 10%
   );
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
-  height: 100vh;
+  height: 100vw;
+  width: 100%;
   left: 0px;
   position: absolute;
   top: 0px;
   transition: opacity 800ms ease, 
     background-size 800ms ease,
     background-position 800ms ease;
-  width: 100vw;
   z-index: 1;
 }
 
