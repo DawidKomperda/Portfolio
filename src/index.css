@@ -41,7 +41,9 @@
   );
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
-  height: 100vw;
+  display: flex;
+  flex-flow: column;
+  height: 75%;
   width: 100%;
   left: 0px;
   position: absolute;
@@ -64,4 +66,8 @@
 
 .menu-items:hover > .menu-item:hover {
   opacity: 1; 
+}
+
+#Contact-Button{
+  color: white;
 }

@@ -14,6 +14,8 @@ const styles = {
     marginY: "sm:my-16 my-6",
 
     card: "w-[425px] h-[400px] rounded-[40px] shadow-lg p-6",
+    smallImage: "w-[55px] h-[55px]",
+    smallImageBackground: `flex justify-center items-center h-[80px] w-[80px] rounded-[50%]`
 
 };
 
