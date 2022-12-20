@@ -1,14 +1,26 @@
 import React from "react";
 import styles from "./style";
 import { About, Contact, Footer, Projects, Skills, Navbar } from "./components";
+import { useEffect } from "react";
 
 const App = () => {
 
-  Array.from(document.getElementsByClassName("menu-item")).forEach((item, index) => {
-    item.onmouseover = () => {
-      document.getElementById("menu-background-animation").className = 'menu-background-position-' + index;
-    }
-  });
+//   useEffect(() => {
+//     Array.from(document.getElementsByClassName("menu-item")).forEach((item, index) => {
+//       item.onmouseover = () => {
+//         document.getElementById("menu-background-animation").className = 'menu-background-position-' + index;
+//       }
+//     })
+// });
+
+    useEffect(() => {
+      Array.from(document.getElementsByClassName("menu-item")).forEach((item, index) => {
+              item.onmouseover = () => {
+                document.getElementById("menu-background-animation").className = 'menu-background-position-' + index;
+              }
+            })
+    }, [])
+
 
   return (
     <div className='bg-primary w-full overflow-hidden text-white'>

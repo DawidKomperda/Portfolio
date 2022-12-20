@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../style';
-
 import { linkedinPng, email, phoneCall } from "../assets";
+import { layout } from '../style';
 
 
 const Contact = () => {
@@ -21,13 +21,12 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className={`${styles.boxWidth} flex flex-col ss:flex-row md:flex-col ss:justify-center ss:items-end md:items-stretch`}>
-      <div className={`flex md:flex-row flex-col xl:max-w-[1280px] md:w-full  ${styles.flexStart}`}>
-
+    <section id='contact' className={`${styles.boxWidth} ${styles.marginY} ${styles.paddingY} flex flex-col ss:flex-row md:flex-col ss:justify-center ss:items-end md:items-stretch  border-4 border-accent rounded-3xl `}>
+      <div className={`flex flex-col items-start md:flex-row md:w-full  xl:max-w-[1280px]  ${styles.flexStart}`}>
         {/* Phone contact section */}
-        <div className='flex flex-row p-5'>
+        <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row '>
           <div className={`${styles.smallImageBackground}`}>
-            <img src={phoneCall} className={`${styles.smallImage} `} />
+            <img src={phoneCall} className={`${styles.smallImage} ml-3`} />
           </div>
           <div>
             <h3 className='pl-5 pb-2 text-4xl'>Call me</h3>
@@ -36,9 +35,9 @@ const Contact = () => {
         </div>
 
         {/* Mail contact section */}
-        <div className='flex flex-row p-5'>
+        <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row'>
           <div className={`${styles.smallImageBackground}`}>
-            <img src={email} className={`${styles.smallImage}`} />
+            <img src={email} className={`${styles.smallImage} ml-3`} />
           </div>
           <div>
             <h2 className='pl-5 pb-2 text-4xl'> Email me</h2>
@@ -47,9 +46,9 @@ const Contact = () => {
         </div>
 
         {/* Linkedin contact section */}
-        <div className='flex flex-row p-5'>
+        <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row'>
           <div className={`${styles.smallImageBackground}`}>
-            <img src={linkedinPng} className={`${styles.smallImage}`} />
+            <img src={linkedinPng} className={`${styles.smallImage} ml-3`} />
           </div>
           <div>
             <h2 className='pl-5 pb-2 text-4xl'> Message me</h2>
@@ -61,12 +60,13 @@ const Contact = () => {
 
       <div className={`${styles.flexStart}`}>
         <form ref={form} onSubmit={sendEmail}
-          className={`md:w-8/12 [&>input]:text-black [&>input]:h-10 md:[&>input]:w-full w-full [&>input]:rounded-lg p-5 [&>*]:text-xl
-        xl:max-w-[1280px] grid grid-cols-2 gap-x-5 gap-y-5 place`}>
+          className={` [&>input]:text-black [&>input]:h-10 w-full    [&>input]:rounded-lg p-5 [&>*]:text-xl
+         grid grid-cols-2 gap-x-5 gap-y-5 md:[&>input]:w-full md:w-8/12 xl:max-w-[1280px]`}>
           <input required type="text" name="user_name" placeholder='Name' />
           <input required type="email" name="user_email" placeholder='Email' />
           <textarea required name="message" placeholder='Message' className='resize overflow-auto text-black rounded-lg h-32 w-full col-span-2 ' />
           <input type="submit" value="Send" id='Contact-Button' className='bg-blue-500 col-span-2 w-full' />
+
         </form>
       </div>
     </section>

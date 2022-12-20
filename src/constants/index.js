@@ -110,6 +110,12 @@ export const expertise = [
       {
         Name: "Wordpress",
       },
+      {
+        Name: "PostgreSql",
+      },
+      {
+        Name: "Docker",
+      },
     ],
   },
 ];
@@ -130,7 +136,7 @@ export const socialMedia = [
   {
     id: "social-media-3",
     icon : linkedin,
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/in/dawid-komperda-727474215/",
 
   },
   {

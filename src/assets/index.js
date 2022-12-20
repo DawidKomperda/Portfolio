@@ -7,6 +7,7 @@ import linkedinPng from "./linkedin.png";
 import mail from "./mail.png";
 import phoneCall from "./phone-call.png";
 import dog from './dog.png';
+import web from './website.png';
 
 
 export {
@@ -18,5 +19,6 @@ export {
     linkedinPng,
     mail,
     phoneCall,
-    dog
+    dog,
+    web,
 };

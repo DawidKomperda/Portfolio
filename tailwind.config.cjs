@@ -7,7 +7,7 @@ module.exports = {
         primary: "rgba(20, 20, 20, 1)",
         secondary: "rgba(255, 255, 255, 1)",
         dimWhite: "rgba(255, 255, 255, 0.7)",
-        accent: "cyan-500",
+        accent: "rgba(0, 229, 245, 0.6)",
       },  
       fontFamily: {
         sans: ["Inter", "sans-serif"],
