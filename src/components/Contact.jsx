@@ -21,8 +21,10 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className={`${styles.boxWidth} ${styles.marginY} ${styles.paddingY} flex flex-col ss:flex-row md:flex-col ss:justify-center ss:items-end md:items-stretch  border-4 border-accent rounded-3xl `}>
-      <div className={`flex flex-col items-start md:flex-row md:w-full  xl:max-w-[1280px]  ${styles.flexStart}`}>
+    <section id='contact' className={`${styles.boxWidth} ${styles.marginY} ${styles.paddingY}border-y-4 border-accent rounded-3xl 
+    md:flex md:flex-col md:items-stretch ss:flex-row ss:justify-center ss:items-end xs:grid xs:grid-cols-2 xs:gap-x-6 
+     `}>
+      <div className={`flex flex-col items-start justify-evenly md:flex-row md:w-full xl:max-w-[1280px]  ${styles.flexStart}`}>
         {/* Phone contact section */}
         <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row '>
           <div className={`${styles.smallImageBackground}`}>
@@ -55,15 +57,14 @@ const Contact = () => {
             <a href='https://www.linkedin.com' className='pl-5 pb-2 text-base ss:text-xl'> Linkedin/profile</a>
           </div>
         </div>
-
       </div>
 
       <div className={`${styles.flexStart}`}>
         <form ref={form} onSubmit={sendEmail}
-          className={` [&>input]:text-black [&>input]:h-10 w-full    [&>input]:rounded-lg p-5 [&>*]:text-xl
-         grid grid-cols-2 gap-x-5 gap-y-5 md:[&>input]:w-full md:w-8/12 xl:max-w-[1280px]`}>
-          <input required type="text" name="user_name" placeholder='Name' />
-          <input required type="email" name="user_email" placeholder='Email' />
+          className={` [&>input]:text-black [&>input]:h-10 [&>input]:rounded-lg p-5 [&>*]:text-xl w-full 
+          grid grid-cols-1 gap-x-5 gap-y-5 md:w-10/12 xl:max-w-[1280px] sm:grid-cols-2 `}>
+          <input required type="text" name="user_name" placeholder='Name' className=' col-span-2 md:col-span-1' />
+          <input required type="email" name="user_email" placeholder='Email' className=' col-span-2 md:col-span-1' />
           <textarea required name="message" placeholder='Message' className='resize overflow-auto text-black rounded-lg h-32 w-full col-span-2 ' />
           <input type="submit" value="Send" id='Contact-Button' className='bg-blue-500 col-span-2 w-full' />
 

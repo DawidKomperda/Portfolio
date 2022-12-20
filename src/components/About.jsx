@@ -3,9 +3,9 @@ import { dog } from '../assets';
 
 const About = () => {
   return (
-    <section id="about" className={`${styles.boxWidth} ${styles.paddingY}  sm:flex-row flex-col `}>
-      <div className={`${styles.flexCenter}`}>
-        <img src={dog} alt="dog" className={`xs:w-[550px] xs:h-[350px] w-[350px] h-[250px] p-4`} />
+    <section id="about" className={`${styles.boxWidth} flex-col sm:flex-row `}>
+      <div className={`${styles.flexCenter} flex-col md:flex-row`}>
+        <img src={dog} alt="dog" className={` w-[350px] h-[250px] p-4 xs:w-[550px] xs:h-[350px]`} />
         <div className={layout.sectionInfo}>
           <h2 className={`${styles.title}`}> Hello! I'm Dawid <br className='sm:block hidden'/> I'm a software developer </h2>
           <p className=" font-poppins font-normal text-dimWhite text-lg">
