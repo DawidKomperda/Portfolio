@@ -1,3 +1,5 @@
+import { facebook, github, linkedin, twitter } from "../assets";
+
 export const navLinks = [
   {
     id: "projects",
@@ -110,4 +112,31 @@ export const expertise = [
       },
     ],
   },
+];
+
+export const socialMedia = [
+  {
+    id: "social-media-1",
+    icon : facebook,
+    link: "https://facebook.com",
+
+  },
+  {
+    id: "social-media-2",
+    icon : github,
+    link: "https://github.com/DawidKomperda",
+
+  },
+  {
+    id: "social-media-3",
+    icon : linkedin,
+    link: "https://www.linkedin.com",
+
+  },
+  {
+    id: "social-media-4",
+    icon : twitter,
+    link: "https://twitter.com",
+  },
+
 ];

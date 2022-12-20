@@ -16,7 +16,7 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           <div className={""} id="menu-background-animation">
             <Navbar />
-            <div className="menu-background-pattern"></div>
+            <div className={`menu-background-pattern`}></div>
           </div>
         </div>
       </div>

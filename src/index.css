@@ -34,6 +34,10 @@
   background-position: 0% -100%;
 }
 
+#menu-background-animation{
+  overflow: auto;
+}
+
 .menu-background-pattern {
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.1) 9%, 
@@ -41,9 +45,10 @@
   );
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
-  display: flex;
+  display: inline-block;
   flex-flow: column;
-  height: 75%;
+  height: 900px;
+  max-height: min-content;
   width: 100%;
   left: 0px;
   position: absolute;
@@ -52,6 +57,18 @@
     background-size 800ms ease,
     background-position 800ms ease;
   z-index: 1;
+}
+
+@media screen and (max-width: 425px) {
+  .menu-background-pattern {
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .menu-background-pattern {
+    height: 650px;
+  }
 }
 
 .menu:hover ~ .menu-background-pattern {

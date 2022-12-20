@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
+import styles from "../style";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -10,8 +11,8 @@ const Navbar = () => {
         {navLinks.map((nav) => (
           <li
             key={nav.id}
-            className={`menu-item font-poppins font-normal block cursor-pointer text-9xl 
-              text-secondary p-5 transition-opacity duration-500 ease |
+            className={`menu-item font-poppins font-normal block cursor-pointer xs:text-9xl text-7xl 
+              text-secondary transition-opacity duration-500 ease ${styles.padding} |
               ${active === nav.title && 'active'}`}
             onClick={() => setActive(nav.title)}
           >

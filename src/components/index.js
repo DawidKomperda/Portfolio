@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import Skills from './Skills';
-import Name from './Name';
 
 export {
 About,
@@ -13,5 +12,4 @@ Footer,
 Navbar,
 Projects,
 Skills,
-Name,
 };
