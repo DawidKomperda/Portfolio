@@ -1,4 +1,4 @@
-import { facebook, github, linkedin, twitter } from "../assets";
+import { facebook, github, linkedin, twitter, web } from "../assets";
 
 export const navLinks = [
   {
@@ -21,8 +21,34 @@ export const navLinks = [
 
 
 export const expertise = [
+  
+
   {
-    title: "Programing Languages and technology",
+    title: "Operating systems and devices",
+    links:
+    [
+      {
+        Name: "Windows 7",
+      },
+      {
+        Name: "Windows 10",
+      },
+      {
+        Name: "Windows 11",
+      },
+      {
+        Name: "Ubuntu 19",
+      },
+      {
+        Name: "Windows Server 2019",
+      },
+      {
+        Name: "Windows Server 2012",
+      },
+    ],
+  },
+  {
+    title: "Programing Languages",
     links: 
     [
       {
@@ -63,31 +89,6 @@ export const expertise = [
       },
       {
         Name: "Tailwind",
-      },
-    ],
-  },
-
-  {
-    title: "Operating systems and devices",
-    links:
-    [
-      {
-        Name: "Windows 7",
-      },
-      {
-        Name: "Windows 10",
-      },
-      {
-        Name: "Windows 11",
-      },
-      {
-        Name: "Ubuntu 19",
-      },
-      {
-        Name: "Windows Server 2019",
-      },
-      {
-        Name: "Windows Server 2012",
       },
     ],
   },
@@ -145,4 +146,49 @@ export const socialMedia = [
     link: "https://twitter.com",
   },
 
+];
+
+export const projectsData = [
+  {
+  id: 1,
+  image: web,
+  title: "Credit Card Company",
+  github: "https://github.com/DawidKomperda/buisness-react-one-page",
+  demo: "http://dawidkomperdaproject1.online",
+  },
+  {
+  id: 2,
+  image: web,
+  title: "Portfolio Website",
+  github: "https://github.com/DawidKomperda/buisness-react-one-page",
+  demo: "http://dawidkomperdaproject1.online",
+  },
+  {
+  id: 3,
+  image: web,
+  title: "Credit Card Company",
+  github: "https://github.com/DawidKomperda/buisness-react-one-page",
+  demo: "http://dawidkomperdaproject1.online",
+  },
+  {
+  id: 4,
+  image: web,
+  title: "Credit Card Company",
+  github: "https://github.com/DawidKomperda/buisness-react-one-page",
+  demo: "http://dawidkomperdaproject1.online",
+  },
+  {
+  id: 5,
+  image: web,
+  title: "Credit Card Company",
+  github: "https://github.com/DawidKomperda/buisness-react-one-page",
+  demo: "http://dawidkomperdaproject1.online",
+  },
+  {
+  id: 6,
+  image: web,
+  title: "Credit Card Company",
+  github: "https://github.com/DawidKomperda/buisness-react-one-page",
+  demo: "http://dawidkomperdaproject1.online",
+  },
 ];

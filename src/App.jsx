@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style";
-import { About, Contact, Footer, Projects, Skills, Navbar } from "./components";
+import { About, Contact, Footer, Projects, Skills, Navbar } from "./components/index.js";
 import { useEffect } from "react";
 
 const App = () => {

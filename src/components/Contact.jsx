@@ -21,12 +21,12 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className={`${styles.boxWidth} ${styles.marginY} ${styles.paddingY}border-y-4 border-accent rounded-3xl 
-    md:flex md:flex-col md:items-stretch ss:flex-row ss:justify-center ss:items-end xs:grid xs:grid-cols-2 xs:gap-x-6 
+    <section id='contact' className={`${styles.boxWidth} ${styles.marginY} ${styles.paddingY} border-y-4 border-accent rounded-3xl 
+    md:flex md:flex-col md:items-stretch ss:flex-row ss:justify-center ss:items-end xs:grid ss:grid-cols-2 xs:gap-x-6
      `}>
-      <div className={`flex flex-col items-start justify-evenly md:flex-row md:w-full xl:max-w-[1280px]  ${styles.flexStart}`}>
+      <div className={`flex flex-col justify-evenly md:flex-row md:w-full ${styles.boxWidth} ${styles.flexStart}`}>
         {/* Phone contact section */}
-        <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row '>
+        <div className='flex flex-col items-start sm:items-center p-5 sm:flex-row '>
           <div className={`${styles.smallImageBackground}`}>
             <img src={phoneCall} className={`${styles.smallImage} ml-3`} />
           </div>
@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
 
         {/* Mail contact section */}
-        <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row'>
+        <div className='flex flex-col items-start sm:items-center p-5 sm:flex-row'>
           <div className={`${styles.smallImageBackground}`}>
             <img src={email} className={`${styles.smallImage} ml-3`} />
           </div>
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         {/* Linkedin contact section */}
-        <div className='flex flex-col items-start xs:items-center p-5 xs:flex-row'>
+        <div className='flex flex-col items-start sm:items-center p-5 sm:flex-row'>
           <div className={`${styles.smallImageBackground}`}>
             <img src={linkedinPng} className={`${styles.smallImage} ml-3`} />
           </div>
@@ -65,7 +65,7 @@ const Contact = () => {
           grid grid-cols-1 gap-x-5 gap-y-5 md:w-10/12 xl:max-w-[1280px] sm:grid-cols-2 `}>
           <input required type="text" name="user_name" placeholder='Name' className=' col-span-2 md:col-span-1' />
           <input required type="email" name="user_email" placeholder='Email' className=' col-span-2 md:col-span-1' />
-          <textarea required name="message" placeholder='Message' className='resize overflow-auto text-black rounded-lg h-32 w-full col-span-2 ' />
+          <textarea required name="message" placeholder='Message' className='resize overflow-auto text-black rounded-lg h-96 sm:h-32 w-full col-span-2 ' />
           <input type="submit" value="Send" id='Contact-Button' className='bg-blue-500 col-span-2 w-full' />
 
         </form>
