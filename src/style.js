@@ -20,6 +20,9 @@ const styles = {
 
     card: "w-[275px] h-[250px] rounded-[40px] shadow-lg sm:w-[300px] sm:h-[250px] md:w-[350px] md:h-[300px]",
 
+    mediaCard: "flex flex-col items-start sm:items-center p-5 sm:flex-row",
+    mediaText: "pl-5 pb-2 text-base ss:text-xl",
+    mediaTittle: "pl-5 pb-2 text-4xl",
     smallImage: "w-[55px] h-[55px]",
     smallImageBackground: `flex justify-center items-center h-[80px] w-[80px] rounded-[50%]`
 
