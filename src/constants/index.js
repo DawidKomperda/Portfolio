@@ -160,8 +160,8 @@ export const projectsData = [
   id: 2,
   image: web,
   title: "Portfolio Website",
-  github: "https://github.com/DawidKomperda/buisness-react-one-page",
-  demo: "http://dawidkomperdaproject1.online",
+  github: "https://github.com/DawidKomperda/portfolio",
+  demo: "http://dawidkomperda.online",
   },
   {
   id: 3,
