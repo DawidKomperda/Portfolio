@@ -4,15 +4,6 @@ import { About, Contact, Footer, Projects, Skills, Navbar } from "./components/i
 import { useEffect } from "react";
 
 const App = () => {
-
-//   useEffect(() => {
-//     Array.from(document.getElementsByClassName("menu-item")).forEach((item, index) => {
-//       item.onmouseover = () => {
-//         document.getElementById("menu-background-animation").className = 'menu-background-position-' + index;
-//       }
-//     })
-// });
-
     useEffect(() => {
       Array.from(document.getElementsByClassName("menu-item")).forEach((item, index) => {
               item.onmouseover = () => {
