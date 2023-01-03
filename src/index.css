@@ -14,22 +14,25 @@
 * {
   scroll-behavior: smooth;
   font-family: "Poppins", Times, serif; 
+  margin: 0px;
+  padding: 0px;
+  
 }
 
 .menu-background-position-0 > .menu-background-pattern {
-  background-position: 0% -25%;
+  background-position: -25% 0%;
 }
 
 .menu-background-position-1 > .menu-background-pattern {
-  background-position: 0% -50%;
+  background-position: -50% 0%;
 }
 
 .menu-background-position-2 > .menu-background-pattern {
-  background-position: 0% -75%;
+  background-position: -75% 0%;
 }
 
 .menu-background-position-3 > .menu-background-pattern {
-  background-position: 0% -100%;
+  background-position: -100% 0%;
 }
 
 #menu-background-animation{
@@ -57,17 +60,35 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 481px) {
   .menu-background-pattern {
-    height: 420px;
+    height: 325px;
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 619px) {
   .menu-background-pattern {
-    height: 650px;
+    height: 350px;
   }
 }
+
+@media screen and (min-width: 620px) and (max-width: 779px) {
+  .menu-background-pattern {
+    height: 525px;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1059px) {
+  .menu-background-pattern {
+    height: 850px;
+  }
+}
+@media screen and (min-width: 1060px) and (max-width: 1400px) {
+  .menu-background-pattern {
+    height: 925px;
+  }
+}
+
 
 .menu:hover ~ .menu-background-pattern {
   background-size: 11vmin 11vmin;

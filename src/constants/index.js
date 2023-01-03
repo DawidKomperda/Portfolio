@@ -1,4 +1,4 @@
-import { facebook, github, linkedin, twitter, web } from "../assets";
+import { facebook, github, linkedin, twitter, web1, web2 } from "../assets";
 
 export const navLinks = [
   {
@@ -21,29 +21,30 @@ export const navLinks = [
 
 
 export const expertise = [
-  
-
   {
-    title: "Operating systems and devices",
+    title: "Computer programs and tools",
     links:
     [
       {
-        Name: "Windows 7",
+        Name: "Git",
       },
       {
-        Name: "Windows 10",
+        Name: "Excel",
       },
       {
-        Name: "Windows 11",
+        Name: "Word",
       },
       {
-        Name: "Ubuntu 19",
+        Name: "Powerpoint",
       },
       {
-        Name: "Windows Server 2019",
+        Name: "Wordpress",
       },
       {
-        Name: "Windows Server 2012",
+        Name: "PostgreSql",
+      },
+      {
+        Name: "Docker",
       },
     ],
   },
@@ -93,29 +94,26 @@ export const expertise = [
     ],
   },
   {
-    title: "Computer programs and tools",
+    title: "Systems and devices",
     links:
     [
       {
-        Name: "Git",
+        Name: "Windows 7",
       },
       {
-        Name: "Excel",
+        Name: "Windows 10",
       },
       {
-        Name: "Word",
+        Name: "Windows 11",
       },
       {
-        Name: "Powerpoint",
+        Name: "Ubuntu 19",
       },
       {
-        Name: "Wordpress",
+        Name: "Windows Server 2019",
       },
       {
-        Name: "PostgreSql",
-      },
-      {
-        Name: "Docker",
+        Name: "Windows Server 2012",
       },
     ],
   },
@@ -125,7 +123,7 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon : facebook,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/dawid.kopinski.14",
 
   },
   {
@@ -143,7 +141,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon : twitter,
-    link: "https://twitter.com",
+    link: "https://twitter.com/komperda_dawid",
   },
 
 ];
@@ -151,44 +149,50 @@ export const socialMedia = [
 export const projectsData = [
   {
   id: 1,
-  image: web,
+  image: web1,
   title: "Credit Card Company",
   github: "https://github.com/DawidKomperda/buisness-react-one-page",
   demo: "http://dawidkomperdaproject1.online",
+  technology: "React Tailwind",
   },
   {
   id: 2,
-  image: web,
+  image: web2,
   title: "Portfolio Website",
   github: "https://github.com/DawidKomperda/portfolio",
   demo: "http://dawidkomperda.online",
+  technology: "React Tailwind",
   },
   {
   id: 3,
-  image: web,
+  image: web1,
   title: "Credit Card Company",
   github: "https://github.com/DawidKomperda/buisness-react-one-page",
   demo: "http://dawidkomperdaproject1.online",
+  technology: "React Tailwind",
   },
   {
   id: 4,
-  image: web,
+  image: web1,
   title: "Credit Card Company",
   github: "https://github.com/DawidKomperda/buisness-react-one-page",
   demo: "http://dawidkomperdaproject1.online",
+  technology: "React Tailwind",
   },
   {
   id: 5,
-  image: web,
+  image: web1,
   title: "Credit Card Company",
   github: "https://github.com/DawidKomperda/buisness-react-one-page",
   demo: "http://dawidkomperdaproject1.online",
+  technology: "React Tailwind",
   },
   {
   id: 6,
-  image: web,
+  image: web1,
   title: "Credit Card Company",
   github: "https://github.com/DawidKomperda/buisness-react-one-page",
   demo: "http://dawidkomperdaproject1.online",
+  technology: "React Tailwind",
   },
 ];

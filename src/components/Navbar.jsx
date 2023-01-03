@@ -12,7 +12,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`menu-item font-poppins font-normal block cursor-pointer text-5xl ss:text-8xl md:text-9xl 
-             transition-opacity duration-500 ease  ${styles.padding} |
+             transition-opacity duration-500 ease xl:px-10 px-4 sm:py-14 md:py-10 py-4 |
               ${active === nav.title && 'active'}`}
             onClick={() => setActive(nav.title)}
           >
