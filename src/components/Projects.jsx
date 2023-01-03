@@ -7,7 +7,7 @@ const Projects = () => {
         <h4 className={`${styles.title} text-center text-accent` }>Portfolio</h4>
       <div className={`sm:pt-16 pt-6 ${styles.flexCenter} flex-col`} >
         <div className={`grid grid-cols-1 ss:grid-cols-2 lg:grid-cols-3`}>
-          {projectsData.slice(0,6).map((data) => {
+          {projectsData.map((data) => {
             return (
               <div key={data.id} className={`${layout.cardHolder} grid grid-cols-2`}>
                 <h2 className=' col-span-2 text-center text-base xs:text-xl w-full font-semibold text-secondary bg-accent rounded-t-2xl'>{data.technology}</h2>

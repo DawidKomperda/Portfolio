@@ -6,10 +6,10 @@ import Projects from './Projects';
 import Skills from './Skills';
 
 export {
-About,
-Contact,
-Footer,
-Navbar,
-Projects,
-Skills,
+    About,
+    Contact,
+    Footer,
+    Navbar,
+    Projects,
+    Skills,
 };

@@ -1,9 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../style';
 import { linkedinPng, email, phoneCall } from "../assets";
-import { layout } from '../style';
-
 
 const Contact = () => {
 
