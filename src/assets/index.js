@@ -9,7 +9,7 @@ import phoneCall from "./phone-call.png";
 import dog from './dog.png';
 import web1 from './website.png';
 import web2 from './website2.png';
-
+import web3 from './website3.png';
 
 export {
     facebook,
@@ -23,4 +23,5 @@ export {
     dog,
     web1,
     web2,
+    web3,
 };

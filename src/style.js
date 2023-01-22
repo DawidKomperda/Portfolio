@@ -18,7 +18,7 @@ const styles = {
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
 
-    card: " aspect-[4/3] min-h-[150px] max-h-[300px] rounded-b-lg shadow-lg ",
+    card: " aspect-[4/3] max-h-[300px] rounded-b-lg shadow-lg h-[200px] md:h-[300px] ",
 
     mediaCard: "flex flex-col items-start sm:items-center p-2 sm:flex-row",
     mediaText: "pl-4 pb-2 text-base ss:text-xl",

@@ -1,4 +1,4 @@
-import { facebook, github, linkedin, twitter, web1, web2 } from "../assets";
+import { facebook, github, linkedin, twitter, web1, web2, web3 } from "../assets";
 
 export const navLinks = [
   {
@@ -74,16 +74,25 @@ export const expertise = [
         Name: "SQL",
       },
       {
-        Name: "MySQL",
-      },
-      {
         Name: "Firebase",
       },
       {
-        Name: "Node",
+        Name: "MongoDB",
+      },
+      {
+        Name: "Express",
       },
       {
         Name: "React",
+      },
+      {
+        Name: "Redux",
+      },
+      {
+        Name: "Rest API",
+      },
+      {
+        Name: "Node",
       },
       {
         Name: "Next",
@@ -149,11 +158,11 @@ export const socialMedia = [
 export const projectsData = [
   {
   id: 1,
-  image: web1,
-  title: "Credit Card Company",
-  github: "https://github.com/DawidKomperda/buisness-react-one-page",
-  demo: "http://dawidkomperdaproject1.online",
-  technology: "React Tailwind",
+  image: web3,
+  title: "Social media",
+  github: "https://github.com/DawidKomperda/Instagram-Like-Website-React",
+  demo: "https://intapage.onrender.com",
+  technology: "React Tailwind Redux MongoDB",
   },
   {
   id: 2,
