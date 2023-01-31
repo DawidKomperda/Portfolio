@@ -1,4 +1,4 @@
-import { facebook, github, linkedin, twitter, web1, web2, web3 } from "../assets";
+import { facebook, github, linkedin, twitter, web1, web2, web3, web4 } from "../assets";
 
 export const navLinks = [
   {
@@ -46,10 +46,19 @@ export const expertise = [
       {
         Name: "Docker",
       },
+      {
+        Name: "Firebase",
+      },
+      {
+        Name: "MongoDB",
+      },
+      {
+        Name: "Rest API",
+      },
     ],
   },
   {
-    title: "Programing Languages",
+    title: "Programing Languages and Frameworks",
     links: 
     [
       {
@@ -74,12 +83,6 @@ export const expertise = [
         Name: "SQL",
       },
       {
-        Name: "Firebase",
-      },
-      {
-        Name: "MongoDB",
-      },
-      {
         Name: "Express",
       },
       {
@@ -87,9 +90,6 @@ export const expertise = [
       },
       {
         Name: "Redux",
-      },
-      {
-        Name: "Rest API",
       },
       {
         Name: "Node",
@@ -100,30 +100,12 @@ export const expertise = [
       {
         Name: "Tailwind",
       },
-    ],
-  },
-  {
-    title: "Systems and devices",
-    links:
-    [
       {
-        Name: "Windows 7",
+        Name: "Moongoose",
       },
       {
-        Name: "Windows 10",
-      },
-      {
-        Name: "Windows 11",
-      },
-      {
-        Name: "Ubuntu 19",
-      },
-      {
-        Name: "Windows Server 2019",
-      },
-      {
-        Name: "Windows Server 2012",
-      },
+        Name: "Angular",
+      }
     ],
   },
 ];
@@ -159,26 +141,26 @@ export const projectsData = [
   {
   id: 1,
   image: web3,
-  title: "Social media",
-  github: "https://github.com/DawidKomperda/Instagram-Like-Website-React",
-  demo: "https://intapage.onrender.com",
-  technology: "React Tailwind Redux MongoDB",
+  title: "Desktop Hotel Website",
+  github: "https://github.com/DawidKomperda/MERN_Desktop_Hotel_Website",
+  demo: "https://mern-hotel-3lal.onrender.com",
+  technology: "Moongoose Express React Node",
   },
   {
   id: 2,
   image: web2,
   title: "Portfolio Website",
-  github: "https://github.com/DawidKomperda/portfolio",
-  demo: "http://dawidkomperda.online",
-  technology: "React Tailwind",
+  github: "https://github.com/DawidKomperda/NextJS_Photograph_Portfolio",
+  demo: "https://tubular-capybara-acd68b.netlify.app",
+  technology: "React Tailwind Next Typescript",
   },
   {
   id: 3,
-  image: web1,
-  title: "Credit Card Company",
-  github: "https://github.com/DawidKomperda/buisness-react-one-page",
-  demo: "http://dawidkomperdaproject1.online",
-  technology: "React Tailwind",
+  image: web4,
+  title: "Desktop Admin Dashboard",
+  github: "https://github.com/DawidKomperda/MERN_Desktop_Hotel_Website/tree/main/admin",
+  demo: "https://mern-hotel-admin.onrender.com",
+  technology: "React",
   },
   {
   id: 4,
@@ -187,21 +169,5 @@ export const projectsData = [
   github: "https://github.com/DawidKomperda/buisness-react-one-page",
   demo: "http://dawidkomperdaproject1.online",
   technology: "React Tailwind",
-  },
-  {
-  id: 5,
-  image: web1,
-  title: "Credit Card Company",
-  github: "https://github.com/DawidKomperda/buisness-react-one-page",
-  demo: "http://dawidkomperdaproject1.online",
-  technology: "React Tailwind",
-  },
-  {
-  id: 6,
-  image: web1,
-  title: "Credit Card Company",
-  github: "https://github.com/DawidKomperda/buisness-react-one-page",
-  demo: "http://dawidkomperdaproject1.online",
-  technology: "React Tailwind",
-  },
+  }
 ];
